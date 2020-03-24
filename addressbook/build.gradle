@@ -10,9 +10,27 @@ repositories {
     jcenter()
 }
 
+dependencies {
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.19'
+}
+
 javafx {
     version = '14'
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
 mainClassName = "org.mano.jdbc.examples.ContactBrowser"
+/*
+eclipse {
+    classpath {
+        file {
+            whenMerged {
+                entries.findAll { it.properties.kind.equals('lib') }.each {
+                    it.entryAttributes['module'] = 'true'
+                }
+            }
+        }
+    }
+}
+*/

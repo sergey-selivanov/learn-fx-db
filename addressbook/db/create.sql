@@ -1,5 +1,5 @@
 CREATE DATABASE addressbook;
-USE DATABASE addressbook;
+USE addressbook;
 
 DROP TABLE IF EXISTS contact;
 
