@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+    id 'eclipse'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+
+    id 'com.github.ben-manes.versions' version '0.28.0'
+}
+
+repositories {
+    jcenter()
+}
+
+javafx {
+    version = '14'
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+mainClassName = "org.mano.jdbc.examples.ContactBrowser"
